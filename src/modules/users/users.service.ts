@@ -42,7 +42,7 @@ export class UsersService {
             statusCode: 200,
             success: true,
             message: 'User profile fetched successfully',
-            ...user.toObject()
+            user: user
         };
     }
 
@@ -72,7 +72,7 @@ export class UsersService {
             statusCode: 200,
             success: true,
             message: 'User profile updated successfully',
-            ...updatedUser.toObject()
+            user: updatedUser
         };
     }
 
