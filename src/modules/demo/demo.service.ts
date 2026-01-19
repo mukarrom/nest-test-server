@@ -12,6 +12,8 @@ export class DemoService {
     ) {
         const imageUrl = await this.cloudinaryService.uploadImage(file);
 
+        console.log(`Image uploaded: ${imageUrl}`);
+
         return {
             title,
             description,
