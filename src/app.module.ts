@@ -4,7 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './modules/auth/auth.module';
-import { TestModule } from './modules/test';
+import { DemoModule } from './modules/demo';
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
@@ -15,7 +15,7 @@ import { UsersModule } from './modules/users/users.module';
     MongooseModule.forRoot(process.env.MONGO_URI || 'mongodb://localhost/nestjs-app'),
     UsersModule,
     AuthModule,
-    TestModule,
+    DemoModule,
   ],
   controllers: [AppController],
   providers: [AppService],

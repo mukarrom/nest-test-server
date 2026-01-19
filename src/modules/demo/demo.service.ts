@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { CloudinaryService } from '../../common/services/cloudinary.service';
 
 @Injectable()
-export class TestService {
+export class DemoService {
     constructor(private readonly cloudinaryService: CloudinaryService) { }
 
     async uploadImage(
